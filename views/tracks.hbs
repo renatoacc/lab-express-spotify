@@ -1,0 +1,26 @@
+{{!-- <div>
+    {{#each tracks}}
+    <li>
+        <h6>{{this.name}}</h6> 
+         <audio controls src="{{this.preview_url}}">
+    </audio>
+    </li>
+    {{/each}}
+</div> --}}
+
+<table class="table table-dark table-borderless">
+  <thead>
+    <tr>
+      <th scope="col" colspan="2">Title</th>
+      <th scope="col" colspan="2" id="align-text">Listen</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each tracks}}
+    <tr>
+      <th scope="row" colspan="2">{{this.name}}</th>
+      <td colspan="2"id="align-text"><audio controls src="{{this.preview_url}}"></audio></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

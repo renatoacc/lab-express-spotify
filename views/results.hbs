@@ -1,0 +1,27 @@
+<div class="around">
+<div class="row row-cols-1 row-cols-md-5 g-4">
+    {{#unless null}}
+    {{#each items}}
+    <div class="col">
+    <div class="card">
+      <img src="{{this.images.1.url}}" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">{{this.name}}</h5>
+        <a href="/albums/{{this.id}}" class="btn btn-primary">View Tracks</a>
+      </div>
+    </div>
+    </div>
+    {{/each}}
+    {{/unless}}
+</div>
+</div>
+
+{{!-- <div>
+    {{#unless null}}
+    {{#each items}}
+        <img src={{this.images.1.url}}>
+            <h5>{{this.name}}</h5>
+        <a href="/albums/{{this.id}}">View Albums</a>
+    {{/each}}
+    {{/unless}}
+</div> --}}

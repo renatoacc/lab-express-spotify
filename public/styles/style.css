@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    border: 0;
+}
+
+.around{
+    margin: 5%;
+}
+
+.search{
+    width: 50%;
+    margin: 25%;
+}
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/spotify-background.jpeg");
+    background-size: cover;
+    position: absolute;
+}
+
+#align-text{
+    text-align: center;
+}
